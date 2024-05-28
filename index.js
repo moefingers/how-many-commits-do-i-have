@@ -8,7 +8,7 @@ async function fetchRepos() {
   let page = 1;
 
   async function fetchPage(page) {
-    return fetch(`https://api.github.com/users/${process.env.USER}/repos?per_page=10&page=${page}`, {
+    return fetch(`https://api.github.com/users/${process.env.USER}/repos?per_page=100&page=${page}`, {
         method: "GET",
         headers: {
           "Authorization": `token ${process.env.GITHUB_TOKEN}`,
