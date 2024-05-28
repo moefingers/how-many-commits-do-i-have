@@ -2,7 +2,7 @@
 require("dotenv").config();
 
 
-console.log("hello world");
+console.log("😁");
 
 async function fetchRepos() {
   let page = 1;
